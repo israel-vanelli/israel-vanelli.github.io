@@ -1,0 +1,40 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: rgb(231, 240, 193);
+}
+
+h1 {
+    color: rgb(88, 79, 80);
+}
+
+h2 {
+    color: rgb(84, 122, 131);
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+table {
+    border: 2px solid rgb(88, 79, 80);
+    margin: 0 auto;
+    width: 650px;
+}
+
+th {
+    background-color: rgb(155, 211, 174);
+}
+
+.code {
+    font-family: monospace;
+    background-color: beige;
+}
+
+td {
+    line-height: 1.25;
+    border-top: 1px solid rgba(88, 79, 80, 0.8);
+}
