@@ -1,79 +1,238 @@
+<!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./resources/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
     <title>Cheatsheet</title>
 </head>
 
 <body>
-    <h1>HTML TABLE REFERENCE</h1>
+    <header>Israel Cheatsheet</header>
 
-    <div>
-        <h2>Table Tags</h2>
+    <main>
+        <h1>ISRAEL CHEATSHEET</h1>
 
-        <table>
-            <thead>
-                <th>Tag</th>
-                <th>Name</th>
-                <th>Description</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><span class="code">&lt;table&gt;</span></td>
-                    <td>Table</td>
-                    <td>The wrapper element for all HTML tables.</td>
-                </tr>
-                <tr>
-                    <td><span class="code">&lt;thead&gt;</span></td>
-                    <td>Table Head</td>
-                    <td>The set of rows defining the column headers in a table.</td>
-                </tr>
-                <tr>
-                    <td><span class="code">&lt;tbody&gt;</span></td>
-                    <td>Table Body</td>
-                    <td>The set of rows containing actual table data.</td>
-                </tr>
-                <tr>
-                    <td><span class="code">&lt;tr&gt;</span></td>
-                    <td>Table Row</td>
-                    <td>The table row container.</td>
-                </tr>
-                <tr>
-                    <td><span class="code">&lt;td&gt;</span></td>
-                    <td>Table Data</td>
-                    <td>The table row container.</td>
-                </tr>
-                <tr>
-                    <td><span class="code">&lt;tfoot&gt;</span></td>
-                    <td>Table Foot</td>
-                    <td>The set of rows defining the footer in a table.</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+        <section id="navigation">
+            <h2>Index</h2>
+            <nav>
+                <ul>
+                    <li><a href="#tables">Tables</a></li>
+                    <ul>
+                        <li><a href="#tabletags">Table Tags</a></li>
+                        <li><a href="#tableattributes">Table Attributes</a></li>
+                    </ul>
+                    <li><a href="#forms">Forms</a></li>
+                    <ul>
+                        <li><a href="#theformelement">The form element</a></li>
+                    </ul>
+                </ul>
+            </nav>
+        </section>
 
-    <div>
-        <h2>Table Attributes</h2>
+        <div>
+            <h2 id="tables">Tables</h2>
 
-        <table>
-            <thead>
-                <th>Attribute</th>
-                <th>Name</th>
-                <th>Description</th>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><span class="code">colspan</span></td>
-                    <td>Column Span</td>
-                    <td>Defines how many columns a td element should span.</td>
-                </tr>
-                <tr>
-                    <td><span class="code">rowspan</span></td>
-                    <td>Row Span</td>
-                    <td>Defines how many rows a td element should span.</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+            <h3 id="tabletags">Table Tags</h3>
+
+            <table>
+                <thead>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="code">&lt;table&gt;</span></td>
+                        <td>Table</td>
+                        <td>The wrapper element for all HTML tables.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="code">&lt;thead&gt;</span></td>
+                        <td>Table Head</td>
+                        <td>The set of rows defining the column headers in a table.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="code">&lt;tbody&gt;</span></td>
+                        <td>Table Body</td>
+                        <td>The set of rows containing actual table data.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="code">&lt;tr&gt;</span></td>
+                        <td>Table Row</td>
+                        <td>The table row container.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="code">&lt;td&gt;</span></td>
+                        <td>Table Data</td>
+                        <td>The table row container.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="code">&lt;tfoot&gt;</span></td>
+                        <td>Table Foot</td>
+                        <td>The set of rows defining the footer in a table.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <section>
+            <h3 id="tableattributes">Table Attributes</h3>
+
+            <table>
+                <thead>
+                    <th>Attribute</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="code">colspan</span></td>
+                        <td>Column Span</td>
+                        <td>Defines how many columns a td element should span.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="code">rowspan</span></td>
+                        <td>Row Span</td>
+                        <td>Defines how many rows a td element should span.</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+
+            <div>
+                <h2>Forms</h2>
+
+                <section class="textbox-1">
+                    <p>Forms are utilized to input and submit data, using a {"name":"value"} pair format when sending or
+                        requesting
+                        data.</p>
+                </section>
+
+                <h3>The <span class="code">&lt;form&gt;</span> Element</h3>
+
+                <section class="textbox-1">
+                    <h3>&lt;input&gt; Element Types</h3>
+                    <p>Input elements are used to accept user submitted data, and can be linked to a form by being
+                        nested
+                        inside the form, or being linked with the <span class="code">&lt;form&gt;</span> attribute.</p>
+
+                    <p>Below are listed a few common types of <span class="code">&lt;Input&gt;</span> elements.</p>
+                </section>
+
+                <table>
+                    <thead>
+                        <th>Type</th>
+                        <th>Name</th>
+                        <th>Appearance</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="code">"text"</span></td>
+                            <td>Text Field</td>
+                            <td><input type="text" name="textfield" id="textfield-id-1" placeholder="placeholder"
+                                    value="value">
+                                <input type="text" name="textfield" id="textfield-id-2" placeholder="placeholder">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td><span class="code">"range"</span></td>
+                            <td>Range</td>
+                            <td><input type="range" name="range" id="range-id" min="0" max="5"></td>
+                        </tr>
+
+                        <tr>
+                            <td><span class="code">"checkbox"</span></td>
+                            <td>Check Box</td>
+                            <td>
+                                <input type="checkbox" name="checkbox-name" id="checkbox-id-1" value="checkbox-value-1">
+                                <label for="checkbox-id-1">option 1</label>
+                                <input type="checkbox" name="checkbox-name" id="checkbox-id-2" value="checkbox-value-2">
+                                <label for="checkbox-id-2">option 2</label>
+                                <input type="checkbox" name="checkbox-name" id="checkbox-id-3" value="checkbox-value-3"
+                                    checked>
+                                <label for="checkbox-id-3">option 3 (pre-checked)</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="code">"radio"</span></td>
+                            <td>Radio</td>
+                            <td>
+                                <input type="radio" name="radio" id="radio-id-1" value="radio-value-1">
+                                <label for="radio-id-1">option 1</label>
+                                <input type="radio" name="radio" id="radio-id-2" value="radio-value-2">
+                                <label for="radio-id-2">option 2</label>
+                                <input type="radio" name="radio" id="radio-id-3" value="radio-value-3" checked>
+                                <label for="radio-id-3">option 3 (pre-checked)</label>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">
+                                <span style="font-size: 13px;">Check <a
+                                        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">MDN
+                                        web docs</a> for
+                                    more info on</span> <span class="code">
+                                    &lt;input&gt;.</span>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+                <h3>&lt;input&gt; Attributes</h3>
+
+                <table>
+                    <thead>
+                        <th>Attribute</th>
+                        <th>Description</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="code">form</span></td>
+                            <td>The attribute in which is specified the associated form <span class="code">id</span> of
+                                the
+                                <span class="code">&lt;input&gt;</span> element. If none is specified then the <span
+                                    class="code">&lt;input&gt;</span> element is associated with the nearest available
+                                form.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="code">id</span></td>
+                            <td>The Unique Identifier attribute, can be referenced in the <span class="code">for</span>
+                                attribute in <span class="code">&lt;label&gt;</span>.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="code">name</span></td>
+                            <td>The "name" of the control in the {"name":"value"} pair, can be used to group <span
+                                    class="code">"checkbox"</span> or <span class="code">"radio"</span> controls.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="code">value</span></td>
+                            <td>The "value" of the control in the {"name":"value"} pair, sets the initial value of the
+                                element.</td>
+                        </tr>
+                        <tr>
+                            <td class="td-1"><span class="code">max</span> and <span class="code">min</span></td>
+                            <td>Can be used to set the maximum and minimum values accepted by the control.</td>
+                        </tr>
+                        <tr>
+                            <td class="td-1"><span class="code">maxlength</span> and <span class="code">minlength</span>
+                            </td>
+                            <td>Can be used to set the maximum length and minimum length (number of characters) of the
+                                control.</td>
+                        </tr>
+                        <tr>
+                            <td><span class="code">required</span></td>
+                            <td>Used to specify that the field is obligatory.</td>
+                        </tr>
+                    </tbody>
+                </table>
+        </section>
+    </main>
 </body>
+
 </html>
