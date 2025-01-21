@@ -8,64 +8,114 @@
     --color-cyanide: rgb(64, 174, 165);
     --color-green: rgb(155, 211, 174);
     --color-lightgreen: rgb(231, 240, 193);
+
+    --color-gray12: rgb(31, 31, 31);
+    --color-gray12-1: rgb(53, 53, 53);
+    --color-gray12-2: rgb(75, 75, 75);
+
+    --page-width: 800px;
+    --content-width: 750px;
 }
 
 body {
-    background-color: var(--color-green);
+    background-color: beige;
     margin: 0;
 }
 
 header {
-    padding: 0;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0 0 0 10px;
     margin: 0;
-    background-color: black;
     font-family: "Jersey 15";
     font-size: 64px;
     color: white;
+
+    background-color: var(--color-green);
 }
 
 main {
+    position: relative;
+    top: 64px;
     background-color: var(--color-lightgreen);
     margin: 0 auto;
-    width: 650px;
+    width: var(--page-width);
     padding: 20px;
+}
+
+#summary {
+    width: fit-content;
 }
 
 h1 {
     color: var(--color-darkbrown);
+    font-family: 'Jersey 15';
+    text-align: center;
 }
 
 h2 {
-    color: rgb(84, 122, 131);
+    color: var(--color-darkbrown);
 }
 
-#navigation {
+h3 {
+    text-align: center;
+}
+
+h1,
+h2,
+h3 {
+    width: var(--content-width);
+    margin: 20px auto;
+}
+
+p {
+    max-width: var(--content-width);
+    margin: 16px auto;
+}
+
+nav {
     background-color: beige;
     width: fit-content;
-    padding: 5px;
-    margin: 5px;
+    padding: 10px;
     border: 2px solid rgb(88, 79, 80);
 }
 
-#navigation ul {
+nav ol {
     list-style-position: inside;
     padding: 10px;
 }
 
-a, 
+nav ul {
+    list-style-position: inside;
+    padding: 10px;
+}
+
+nav ul a:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+a,
 a:visited {
     color: black;
 }
 
-h1,
-h3 {
-    text-align: center;
+.code {
+    font-family: monospace;
+    background-color: beige;
+}
+
+.code-2 {
+    font-family: monospace;
+    font-size: 16px;
+    background-color: beige;
 }
 
 table {
     border: 2px solid rgb(88, 79, 80);
     margin: 0 auto;
-    width: 650px;
+    width: var(--content-width);
 }
 
 .subtable {
@@ -76,10 +126,7 @@ th {
     background-color: rgb(155, 211, 174);
 }
 
-.code {
-    font-family: monospace;
-    background-color: beige;
-}
+
 
 td {
     line-height: 1.25;
@@ -95,8 +142,8 @@ form {
     text-align: center;
 }
 
-.textbox-1 {
+.content-box-1 {
     margin: 0 auto;
-    width: 650px;
+    max-width: var(--content-width);
     text-align: left;
 }
