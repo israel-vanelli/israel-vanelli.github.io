@@ -94,11 +94,16 @@ nav ul {
 
 nav ul a:hover {
     background-color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
 }
 
 a,
 a:visited {
     color: black;
+}
+
+a:active {
+    color: white;
 }
 
 .code {
