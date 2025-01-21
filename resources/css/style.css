@@ -27,7 +27,7 @@ header {
 main {
     background-color: var(--color-lightgreen);
     margin: 0 auto;
-    width: fit-content;
+    width: 650px;
     padding: 20px;
 }
 
@@ -50,6 +50,11 @@ h2 {
 #navigation ul {
     list-style-position: inside;
     padding: 10px;
+}
+
+a, 
+a:visited {
+    color: black;
 }
 
 h1,
