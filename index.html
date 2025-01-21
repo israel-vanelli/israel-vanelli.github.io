@@ -14,30 +14,31 @@
     <main>
         <h1 title="Teste">My HTML Cheatsheet</h1>
 
-        <section id="navigation">
-            <h2>1. Summary</h2>
+        <div class="content-box-1">
             <nav>
-                <ul>
+                <h2 id="summary">1. Summary</h2>
+                <ol start="2">
                     <li>
-                        <a href="#tables">2. Tables</a>
+                        <a href="#tables">Tables</a>
                         <ul>
                             <li><a href="#tabletags">Table Tags</a></li>
                             <li><a href="#tableattributes">Table Attributes</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a href="#forms">3. Forms</a>
+                        <a href="#forms">Forms</a>
                         <ul>
                             <li><a href="#theformelement">The form element</a></li>
+                            <li><a href="#inputelementtypes">Input element types</a></li>
+                            <li><a href="#inputattributes">Input attributes</a></li>
                         </ul>
                     </li>
-                </ul>
+                </ol>
             </nav>
-        </section>
+        </div>
+        <br>
 
-
-
-        <div>
+        <section>
             <h2 id="tables">2. Tables</h2>
 
             <h3 id="tabletags">Table Tags</h3>
@@ -83,7 +84,8 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
+        </section>
+        <br>
 
         <section>
             <h3 id="tableattributes">Table Attributes</h3>
@@ -109,33 +111,35 @@
                     </tr>
                 </tbody>
             </table>
+            <br>
 
-            <div>
-                <h2>3. Forms</h2>
+            <section>
+                <h2 id="forms">3. Forms</h2>
 
-                <div class="textbox-1">
-                    <p>Forms are utilized to submit information, using controls which have a {"name":"value"} pair
-                        format when sending or
-                        requests with the provided
-                        data.</p>
-                </div>
+                <h3 id="theformelement">The <span>&lt;form&gt;</span> Element</h3>
 
-                <h3>The <span class="code">&lt;form&gt;</span> Element</h3>
-                <p>Forms have two main attributes: <span class="code">id</span> and <span class="code">method</span>.
-                    The <span class="code">id</span> attribute contains the form unique identifier, which can be used to
-                    link <span class="code">&lt;input&gt;</span> elements (further explanation below), and the <span
-                        class="code">method</span> attribute is used to define the HTTP Method this form will be using.
+                <p>Forms are utilized to submit information, using controls which have a {"name":"value"} pair
+                    format when sending or
+                    requests with the provided
+                    data.
+                </p>
+
+                <p>Forms have two main attributes: <span class="code-2">id</span> and <span
+                        class="code-2">method</span>.
+                    The <span class="code-2">id</span> attribute contains the form unique identifier, which can be used
+                    to
+                    link <span class="code-2">&lt;input&gt;</span> elements (further explanation below), and the <span
+                        class="code-2">method</span> attribute is used to define the HTTP Method this form will be
+                    using.
                     <strong>TO DO: HTTP Cheatsheet.</strong>
                 </p>
 
-                <div class="textbox-1">
-                    <h3>&lt;input&gt; Element Types</h3>
-                    <p>Input elements are used to accept user submitted data, and can be linked to a form by being
-                        nested
-                        inside the form, or being linked with the <span class="code">&lt;form&gt;</span> attribute.</p>
+                <h3 id="inputelementtypes">&lt;input&gt; Element Types</h3>
+                <p>Input elements are used to accept user submitted data, and can be linked to a form by being
+                    nested
+                    inside the form, or being linked with the <span class="code-2">&lt;form&gt;</span> attribute.</p>
 
-                    <p>Below are listed a few common types of <span class="code">&lt;input&gt;</span> elements.</p>
-                </div>
+                <p>Below are listed a few common types of <span class="code-2">&lt;input&gt;</span> elements.</p>
 
                 <table>
                     <thead>
@@ -200,8 +204,9 @@
                         </tr>
                     </tfoot>
                 </table>
+                <br>
 
-                <h3>&lt;input&gt; Attributes</h3>
+                <h3 id="inputattributes">&lt;input&gt; Attributes</h3>
 
                 <table>
                     <thead>
@@ -251,7 +256,7 @@
                         </tr>
                     </tbody>
                 </table>
-            </div>
+            </section>
         </section>
     </main>
 </body>
