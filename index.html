@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
@@ -12,24 +12,30 @@
     <header>Cheatsheet</header>
 
     <main>
-        <h1>My HTML Cheatsheet</h1>
+        <h1 title="Teste">My HTML Cheatsheet</h1>
 
         <section id="navigation">
             <h2>1. Summary</h2>
             <nav>
                 <ul>
-                    <li><a href="#tables">2. Tables</a></li>
-                    <ul>
-                        <li><a href="#tabletags">Table Tags</a></li>
-                        <li><a href="#tableattributes">Table Attributes</a></li>
-                    </ul>
-                    <li><a href="#forms">3. Forms</a></li>
-                    <ul>
-                        <li><a href="#theformelement">The form element</a></li>
-                    </ul>
+                    <li>
+                        <a href="#tables">2. Tables</a>
+                        <ul>
+                            <li><a href="#tabletags">Table Tags</a></li>
+                            <li><a href="#tableattributes">Table Attributes</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#forms">3. Forms</a>
+                        <ul>
+                            <li><a href="#theformelement">The form element</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </section>
+
+
 
         <div>
             <h2 id="tables">2. Tables</h2>
@@ -38,9 +44,11 @@
 
             <table>
                 <thead>
-                    <th>Tag</th>
-                    <th>Name</th>
-                    <th>Description</th>
+                    <tr>
+                        <th>Tag</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </tr>
                 </thead>
                 <tbody>
                     <tr>
@@ -82,9 +90,11 @@
 
             <table>
                 <thead>
-                    <th>Attribute</th>
-                    <th>Name</th>
-                    <th>Description</th>
+                    <tr>
+                        <th>Attribute</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </tr>
                 </thead>
                 <tbody>
                     <tr>
@@ -99,34 +109,41 @@
                     </tr>
                 </tbody>
             </table>
-            </div>
 
             <div>
                 <h2>3. Forms</h2>
 
-                <section class="textbox-1">
-                    <p>Forms are utilized to submit information, using controls which have a {"name":"value"} pair format when sending or
+                <div class="textbox-1">
+                    <p>Forms are utilized to submit information, using controls which have a {"name":"value"} pair
+                        format when sending or
                         requests with the provided
                         data.</p>
-                </section>
+                </div>
 
                 <h3>The <span class="code">&lt;form&gt;</span> Element</h3>
-                <p>Forms have two main attributes: <span class="code">id</span> and <span class="code">method</span>. The <span class="code">id</span> attribute contains the form unique identifier, which can be used to link <span class="code">&lt;input&gt;</span> elements (further explanation below), and the <span class="code">method</span> attribute is used to define the HTTP Method this form will be using. <strong>TO DO: HTTP Cheatsheet.</strong></p>
+                <p>Forms have two main attributes: <span class="code">id</span> and <span class="code">method</span>.
+                    The <span class="code">id</span> attribute contains the form unique identifier, which can be used to
+                    link <span class="code">&lt;input&gt;</span> elements (further explanation below), and the <span
+                        class="code">method</span> attribute is used to define the HTTP Method this form will be using.
+                    <strong>TO DO: HTTP Cheatsheet.</strong>
+                </p>
 
-                <section class="textbox-1">
+                <div class="textbox-1">
                     <h3>&lt;input&gt; Element Types</h3>
                     <p>Input elements are used to accept user submitted data, and can be linked to a form by being
                         nested
                         inside the form, or being linked with the <span class="code">&lt;form&gt;</span> attribute.</p>
 
                     <p>Below are listed a few common types of <span class="code">&lt;input&gt;</span> elements.</p>
-                </section>
+                </div>
 
                 <table>
                     <thead>
-                        <th>Type</th>
-                        <th>Name</th>
-                        <th>Appearance</th>
+                        <tr>
+                            <th>Type</th>
+                            <th>Name</th>
+                            <th>Appearance</th>
+                        </tr>
                     </thead>
                     <tbody>
                         <tr>
@@ -188,8 +205,10 @@
 
                 <table>
                     <thead>
-                        <th>Attribute</th>
-                        <th>Description</th>
+                        <tr>
+                            <th>Attribute</th>
+                            <th>Description</th>
+                        </tr>
                     </thead>
                     <tbody>
                         <tr>
@@ -232,6 +251,7 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
         </section>
     </main>
 </body>
