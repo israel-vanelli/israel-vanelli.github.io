@@ -2,20 +2,27 @@
 <html lang="en-US">
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./resources/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+
+
     <title>Cheatsheet</title>
 </head>
 
 <body>
-    <header>Cheatsheet</header>
+    <div class="banner">Vanellinae <span style="font-size: 48px;">𓅛</span></div>
 
     <main>
         <h1 title="Teste">My HTML Cheatsheet</h1>
 
-        <div class="content-box-1">
-            <nav>
+        <div class="content">
+            <nav class="inline-block">
                 <h2 id="summary">1. Summary</h2>
                 <ol start="2">
                     <li>
@@ -35,10 +42,11 @@
                     </li>
                 </ol>
             </nav>
+            <div class="quadrado"></div>
         </div>
         <br>
 
-        <section>
+        <section class=" content">
             <h2 id="tables">2. Tables</h2>
 
             <h3 id="tabletags">Table Tags</h3>
@@ -84,18 +92,16 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
-        <br>
+            <br>
 
-        <section>
             <h3 id="tableattributes">Table Attributes</h3>
 
             <table>
                 <thead>
                     <tr>
-                        <th>Attribute</th>
-                        <th>Name</th>
-                        <th>Description</th>
+                        <th class="col-1">Attribute</th>
+                        <th class="col-2">Name</th>
+                        <th class="col-3">Description</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -112,151 +118,159 @@
                 </tbody>
             </table>
             <br>
+        </section>
+        <br>
+        <section class="content">
+            <h2 id="forms">3. Forms</h2>
 
-            <section>
-                <h2 id="forms">3. Forms</h2>
+            <h3 id="theformelement">The <span>&lt;form&gt;</span> Element</h3>
 
-                <h3 id="theformelement">The <span>&lt;form&gt;</span> Element</h3>
+            <p>Forms are utilized to submit information, using controls which have a {"name":"value"} pair
+                format when sending or
+                requests with the provided
+                data.
+            </p>
 
-                <p>Forms are utilized to submit information, using controls which have a {"name":"value"} pair
-                    format when sending or
-                    requests with the provided
-                    data.
-                </p>
+            <p>Forms have two main attributes: <span class="code-2">id</span> and <span class="code-2">method</span>.
+                The <span class="code-2">id</span> attribute contains the form unique identifier, which can be
+                used
+                to
+                link <span class="code-2">&lt;input&gt;</span> elements (further explanation below), and the
+                <span class="code-2">method</span> attribute is used to define the HTTP Method this form will be
+                using.
+                <strong>TO DO: HTTP Cheatsheet.</strong>
+            </p>
+            <br>
 
-                <p>Forms have two main attributes: <span class="code-2">id</span> and <span
-                        class="code-2">method</span>.
-                    The <span class="code-2">id</span> attribute contains the form unique identifier, which can be used
-                    to
-                    link <span class="code-2">&lt;input&gt;</span> elements (further explanation below), and the <span
-                        class="code-2">method</span> attribute is used to define the HTTP Method this form will be
-                    using.
-                    <strong>TO DO: HTTP Cheatsheet.</strong>
-                </p>
+            <h3 id="inputelementtypes">&lt;input&gt; Element Types</h3>
+            <p>Input elements are used to accept user submitted data, and can be linked to a form by being
+                nested
+                inside the form, or being linked with the <span class="code-2">&lt;form&gt;</span> attribute.
+            </p>
 
-                <h3 id="inputelementtypes">&lt;input&gt; Element Types</h3>
-                <p>Input elements are used to accept user submitted data, and can be linked to a form by being
-                    nested
-                    inside the form, or being linked with the <span class="code-2">&lt;form&gt;</span> attribute.</p>
+            <p>Below are listed a few common types of <span class="code-2">&lt;input&gt;</span> elements.</p>
+            <br>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Name</th>
+                        <th>Appearance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="code">"text"</span></td>
+                        <td>Text Field</td>
+                        <td><input type="text" name="textfield" id="textfield-id-1" placeholder="placeholder"
+                                value="value">
+                            <input type="text" name="textfield" id="textfield-id-2" placeholder="placeholder">
+                        </td>
+                    </tr>
 
-                <p>Below are listed a few common types of <span class="code-2">&lt;input&gt;</span> elements.</p>
+                    <tr>
+                        <td><span class="code">"range"</span></td>
+                        <td>Range</td>
+                        <td><input type="range" name="range" id="range-id" min="0" max="5"></td>
+                    </tr>
 
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Type</th>
-                            <th>Name</th>
-                            <th>Appearance</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><span class="code">"text"</span></td>
-                            <td>Text Field</td>
-                            <td><input type="text" name="textfield" id="textfield-id-1" placeholder="placeholder"
-                                    value="value">
-                                <input type="text" name="textfield" id="textfield-id-2" placeholder="placeholder">
-                            </td>
-                        </tr>
+                    <tr>
+                        <td><span class="code">"checkbox"</span></td>
+                        <td>Check Box</td>
+                        <td>
+                            <input type="checkbox" name="checkbox-name" id="checkbox-id-1" value="checkbox-value-1">
+                            <label for="checkbox-id-1">option 1</label>
+                            <input type="checkbox" name="checkbox-name" id="checkbox-id-2" value="checkbox-value-2">
+                            <label for="checkbox-id-2">option 2</label>
+                            <input type="checkbox" name="checkbox-name" id="checkbox-id-3" value="checkbox-value-3"
+                                checked>
+                            <label for="checkbox-id-3">option 3 (pre-checked)</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="code">"radio"</span></td>
+                        <td>Radio</td>
+                        <td>
+                            <input type="radio" name="radio" id="radio-id-1" value="radio-value-1">
+                            <label for="radio-id-1">option 1</label>
+                            <input type="radio" name="radio" id="radio-id-2" value="radio-value-2">
+                            <label for="radio-id-2">option 2</label>
+                            <input type="radio" name="radio" id="radio-id-3" value="radio-value-3" checked>
+                            <label for="radio-id-3">option 3 (pre-checked)</label>
+                        </td>
+                    </tr>
+                </tbody>
 
-                        <tr>
-                            <td><span class="code">"range"</span></td>
-                            <td>Range</td>
-                            <td><input type="range" name="range" id="range-id" min="0" max="5"></td>
-                        </tr>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">
+                            <span style="font-size: 13px;">Check <a
+                                    href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">MDN
+                                    web docs</a> for
+                                more info on</span> <span class="code">
+                                &lt;input&gt;.</span>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+            <br>
 
-                        <tr>
-                            <td><span class="code">"checkbox"</span></td>
-                            <td>Check Box</td>
-                            <td>
-                                <input type="checkbox" name="checkbox-name" id="checkbox-id-1" value="checkbox-value-1">
-                                <label for="checkbox-id-1">option 1</label>
-                                <input type="checkbox" name="checkbox-name" id="checkbox-id-2" value="checkbox-value-2">
-                                <label for="checkbox-id-2">option 2</label>
-                                <input type="checkbox" name="checkbox-name" id="checkbox-id-3" value="checkbox-value-3"
-                                    checked>
-                                <label for="checkbox-id-3">option 3 (pre-checked)</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><span class="code">"radio"</span></td>
-                            <td>Radio</td>
-                            <td>
-                                <input type="radio" name="radio" id="radio-id-1" value="radio-value-1">
-                                <label for="radio-id-1">option 1</label>
-                                <input type="radio" name="radio" id="radio-id-2" value="radio-value-2">
-                                <label for="radio-id-2">option 2</label>
-                                <input type="radio" name="radio" id="radio-id-3" value="radio-value-3" checked>
-                                <label for="radio-id-3">option 3 (pre-checked)</label>
-                            </td>
-                        </tr>
-                    </tbody>
+            <h3 id="inputattributes">&lt;input&gt; Attributes</h3>
 
-                    <tfoot>
-                        <tr>
-                            <td colspan="3">
-                                <span style="font-size: 13px;">Check <a
-                                        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input">MDN
-                                        web docs</a> for
-                                    more info on</span> <span class="code">
-                                    &lt;input&gt;.</span>
-                            </td>
-                        </tr>
-                    </tfoot>
-                </table>
-                <br>
-
-                <h3 id="inputattributes">&lt;input&gt; Attributes</h3>
-
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Attribute</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><span class="code">form</span></td>
-                            <td>The attribute in which is specified the associated form <span class="code">id</span> of
-                                the
-                                <span class="code">&lt;input&gt;</span> element. If none is specified then the <span
-                                    class="code">&lt;input&gt;</span> element is associated with the nearest available
-                                form.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td><span class="code">id</span></td>
-                            <td>The Unique Identifier attribute, can be referenced in the <span class="code">for</span>
-                                attribute in <span class="code">&lt;label&gt;</span>.</td>
-                        </tr>
-                        <tr>
-                            <td><span class="code">name</span></td>
-                            <td>The "name" of the control in the {"name":"value"} pair, can be used to group <span
-                                    class="code">"checkbox"</span> or <span class="code">"radio"</span> controls.</td>
-                        </tr>
-                        <tr>
-                            <td><span class="code">value</span></td>
-                            <td>The "value" of the control in the {"name":"value"} pair, sets the initial value of the
-                                element.</td>
-                        </tr>
-                        <tr>
-                            <td class="td-1"><span class="code">max</span> and <span class="code">min</span></td>
-                            <td>Can be used to set the maximum and minimum values accepted by the control.</td>
-                        </tr>
-                        <tr>
-                            <td class="td-1"><span class="code">maxlength</span> and <span class="code">minlength</span>
-                            </td>
-                            <td>Can be used to set the maximum length and minimum length (number of characters) of the
-                                control.</td>
-                        </tr>
-                        <tr>
-                            <td><span class="code">required</span></td>
-                            <td>Used to specify that the field is obligatory.</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Attribute</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="code">form</span></td>
+                        <td>The attribute in which is specified the associated form <span class="code">id</span>
+                            of
+                            the
+                            <span class="code">&lt;input&gt;</span> element. If none is specified then the <span
+                                class="code">&lt;input&gt;</span> element is associated with the nearest
+                            available
+                            form.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="code">id</span></td>
+                        <td>The Unique Identifier attribute, can be referenced in the <span class="code">for</span>
+                            attribute in <span class="code">&lt;label&gt;</span>.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="code">name</span></td>
+                        <td>The "name" of the control in the {"name":"value"} pair, can be used to group <span
+                                class="code">"checkbox"</span> or <span class="code">"radio"</span> controls.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span class="code">value</span></td>
+                        <td>The "value" of the control in the {"name":"value"} pair, sets the initial value of
+                            the
+                            element.</td>
+                    </tr>
+                    <tr>
+                        <td class="td-1"><span class="code">max</span> and <span class="code">min</span></td>
+                        <td>Can be used to set the maximum and minimum values accepted by the control.</td>
+                    </tr>
+                    <tr>
+                        <td class="td-1"><span class="code">maxlength</span> and <span class="code">minlength</span>
+                        </td>
+                        <td>Can be used to set the maximum length and minimum length (number of characters) of
+                            the
+                            control.</td>
+                    </tr>
+                    <tr>
+                        <td><span class="code">required</span></td>
+                        <td>Used to specify that the field is obligatory.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
         </section>
     </main>
 </body>
