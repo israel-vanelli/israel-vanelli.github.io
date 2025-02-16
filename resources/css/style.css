@@ -9,7 +9,7 @@
     --color-darkbrown: rgb(88, 79, 80);
     --color-darkblue: rgb(84, 122, 131);
     --color-cyanide: rgb(64, 174, 165);
-    --color-green: rgb(155, 211, 174);
+    --color-green: rgb(138, 207, 161);
     --color-lightgreen: rgb(231, 240, 193);
 
     --color-gray12: rgb(31, 31, 31);
@@ -28,11 +28,22 @@
     --color-apple-purple: #973999;
     --color-apple-blue: #009cdf;
 
+    --color-google-blue: #4285F4;
+    --color-google-red: #DB4437;
+    --color-google-yellow: #F4B400;
+    --color-google-green: #0F9D58;
+
+
     --page-width: 80%;
+}
+
+html {
+    width: 100%;
 }
 
 body {
     background-color: var(--color-gray-bg);
+    width: 100%;
     margin: 0;
 }
 
@@ -47,7 +58,7 @@ body {
     font-size: 64px;
     color: white;
 
-    background-color: var(--color-apple-green);
+    background-color: var(--color-green);
 }
 
 main {
@@ -122,13 +133,17 @@ a:visited {
 
 .code {
     font-family: monospace;
-    background-color: beige;
+    background-color: #eae9ed;
+    border-radius: 2px;
+    padding: 0 1px;
 }
 
 .code-2 {
     font-family: monospace;
     font-size: 16px;
-    background-color: beige;
+    background-color: #eae9ed;
+    border-radius: 3px;
+    padding: 0 2px;
 }
 
 table {
@@ -142,11 +157,12 @@ table {
 }
 
 th {
-    background-color: var(--color-apple-green);
+    background-color: var(--color-green);
 }
 
 td {
-    line-height: 1.25;
+    padding-left: 3px;
+    line-height: 1.5;
     border-top: 1px solid rgba(88, 79, 80, 0.8);
 }
 

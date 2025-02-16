@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jersey+15&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./resources/css/style.css">
+    <link rel="stylesheet" href="./resources/css/csscheatsheetstyle.css">
+
+    <title>Cheatsheet</title>
+</head>
+
+<body>
+    <div class="banner">Vanellinae <span style="font-size: 48px;">𓅛</span></div>
+
+    <main>
+        <h1>My CSS Cheatsheet</h1>
+        <section class="content">
+            <h2><span class="attribute-name">display: flex; and display: flex-inline;</span> <span
+                    class="tag-container">flex-container</span></h2>
+            <div class="flex wrap space-between"></div>
+            <h3>flex;</h3>
+            <div class="css-example">
+                <div class="flex">
+                    <div class="square64px flex-item red">Red 1</div>
+                    <div class="square64px flex-item green">Green 1</div>
+                    <div class="square64px flex-item blue">Blue 1</div>
+                </div>
+                <div class="flex">
+                    <div class="square64px flex-item red">Red 2</div>
+                    <div class="square64px flex-item green">Green 2</div>
+                    <div class="square64px flex-item blue">Blue 2</div>
+                </div>
+            </div>
+            <h3>inline-flex;</h3>
+            <div class="css-example">
+                <div class="inline-flex">
+                    <div class="square64px flex-item red">Red 1</div>
+                    <div class="square64px flex-item green">Green 1</div>
+                    <div class="square64px flex-item blue">Blue 1</div>
+                </div>
+                <div class="inline-flex">
+                    <div class="square64px flex-item red">Red 2</div>
+                    <div class="square64px flex-item green">Green 2</div>
+                    <div class="square64px flex-item blue">Blue 2</div>
+                </div>
+            </div>
+        </section>
+
+        <br>
+
+        <section class="content">
+            <h2>justify-content: </h2>
+            <h3>flex-start;</h3>
+            <div class="css-example">
+                <div class="flex justify-flex-start">
+                    <div class="square64px flex-item red">Red</div>
+                    <div class="square64px flex-item green">Green</div>
+                    <div class="square64px flex-item blue">Blue</div>
+                </div>
+            </div>
+            <h3>flex-end;</h3>
+            <div class="css-example">
+                <div class="flex justify-flex-end">
+                    <div class="square64px flex-item red">Red</div>
+                    <div class="square64px flex-item green">Green</div>
+                    <div class="square64px flex-item blue">Blue</div>
+                </div>
+            </div>
+            <h3>center;</h3>
+            <div class="css-example">
+                <div class="flex justify-center">
+                    <div class="square64px flex-item red">Red</div>
+                    <div class="square64px flex-item green">Green</div>
+                    <div class="square64px flex-item blue">Blue</div>
+                </div>
+            </div>
+            <h3>space-around;</h3>
+            <div class="css-example">
+                <div class="flex justify-space-around">
+                    <div class="square64px flex-item red">Red</div>
+                    <div class="square64px flex-item green">Green</div>
+                    <div class="square64px flex-item blue">Blue</div>
+                </div>
+            </div>
+            <h3>space-between;</h3>
+            <div class="css-example">
+                <div class="flex justify-space-between">
+                    <div class="square64px flex-item red">Red</div>
+                    <div class="square64px flex-item green">Green</div>
+                    <div class="square64px flex-item blue">Blue</div>
+                </div>
+            </div>
+        </section>
+
+        <br>
+
+        <section class="content">
+            <h2>align-items: </h2>
+            <h3>flex-start</h3>
+            <div class="css-example">
+                <div class="flex align-items-flex-start">
+                    <div class="square64px flex-item red">Red</div>
+                    <div class="square64px flex-item green">Green</div>
+                    <div class="square64px flex-item blue">Blue</div>
+                </div>
+            </div>
+            <h3>flex-end</h3>
+            <div class="css-example">
+                <div class="flex align-items-flex-end">
+                    <div class="square64px flex-item red">Red</div>
+                    <div class="square64px flex-item green">Green</div>
+                    <div class="square64px flex-item blue">Blue</div>
+                </div>
+            </div>
+            <h3>center</h3>
+            <div class="css-example">
+                <div class="flex align-items-center">
+                    <div class="square64px flex-item red">Red</div>
+                    <div class="square64px flex-item green">Green</div>
+                    <div class="square64px flex-item blue">Blue</div>
+                </div>
+            </div>
+            <h3>baseline</h3>
+            <div class="css-example">
+                <div class="flex align-items-baseline">
+                    <div class="square64px flex-item red">Red</div>
+                    <div class="square80px flex-item green">Green</div>
+                    <div class="square64px flex-item blue">Blue</div>
+                </div>
+            </div>
+            <p>Note: Baseline aligns the bottom of the <em>content</em> of the container, notice how the text is
+                aligned in this case </p>
+            <h3>stretch (default)</h3>
+            <div class="css-example">
+                <div class="flex align-items-stretch">
+                    <div class="width64px flex-item red">Red</div>
+                    <div class="width64px flex-item green">Green</div>
+                    <div class="width64px flex-item blue">Blue</div>
+                </div>
+            </div>
+        </section>
+
+        <br>
+
+        <section class="content">
+            <h2><span class="attribute-name">flex-grow:, flex-shrink: and flex-basis:</span> <span
+                    class="tag-item">flex-item</span></h2>
+            <h3>flex-grow: </h3>
+            <div class="css-example">
+                <div class="flex">
+                    <div class="square64px flex-item red flex-grow-side">Red</div>
+                    <div class="square64px flex-item green flex-grow-center">Green</div>
+                    <div class="square64px flex-item blue flex-grow-side">Blue</div>
+                </div>
+            </div>
+            <p>The <span class="name">flex-grow</span> attribute sets how much the defined flex items will grow relative
+                to the other flex items inside the same container.</p>
+            <p>In the example above the Green item has a <span class="name">flex-grow</span> attribute with the value of
+                3, while Red and Blue have a value of 1, resulting in the Green item growing 3 times more than the Red
+                and Blue items.
+            </p>
+            <br>
+            <h3>flex-shrink: </h3>
+            <div class="css-example">
+                <div class="flex">
+                    <div class="rectangle300px64px flex-item red flex-shrink-side">Red</div>
+                    <div class="rectangle300px64px flex-item green flex-shrink-center">Green</div>
+                    <div class="rectangle300px64px flex-item blue flex-shrink-side">Blue</div>
+                </div>
+            </div>
+            <p>The <span class="name">flex-shrink</span> attribute sets how much the defined flex items will shrink
+                relative
+                to the other flex items inside the same container.</p>
+            <p>In the example above the Green item has a <span class="name">flex-shrink</span> attribute with the value
+                of
+                3, while Red and Blue have a value of 1, resulting in the Green item shrinking 3 times more than the Red
+                and Blue items. <strong>All flex items have a default <span class="name">flex-shrink</span> value of
+                    1.</strong>
+            </p>
+            <br>
+
+            <h3>flex-basis</h3>
+            <div class="css-example">
+                <div class="flex">
+                    <div class="square64px flex-item red flex-basis-350px">Red</div>
+                    <div class="square64px flex-item green flex-basis-350px">Green</div>
+                    <div class="square64px flex-item blue flex-basis-350px">Blue</div>
+                </div>
+            </div>
+            <p>Specifies the initial length of a flex item. In this example the <span class="name">flex-basis</span> of
+                all the items is 350px.</p>
+        </section>
+
+        <br>
+
+        <section class="content">
+            <h2>flex:</h2>
+            <p>Shorthand property for flex-grow flex-shrink flex-basis;</p>
+            <h3>Examples:</h3>
+            <p><span class="name">flex:</span> <span class="value">1 2 150px;</span><br>
+                equivalent to flex-grow: 1; flex-shrink: 2; flex-basis: 150px;</p>
+            <br>
+            <p><span class="name">flex:</span> <span class="value">1 2;</span><br>
+                equivalent to flex-grow: 1; flex-shrink: 2; <strong>But no flex-basis is specified.</strong></p>
+            <br>
+            <p><span class="name">flex:</span> <span class="value">2 150px;</span><br>
+                equivalent to flex-grow: 2; flex-basis: 150px;</p>
+            <br>
+            <p>Note: there is no way to set only flex-shrink and flex-basis with only two values.</p>
+        </section>
+        <br>
+        <section class="content">
+            <h2>flex-wrap:</h2>
+            <p>The property used to define if flex items are forced to stay in the current row or should move to the
+                next line if necessary. The default value for this property is <strong>nowrap</strong>.</p>
+            <br>
+            <h3><span class="name">flex-wrap:</span> <span class="value">wrap</span></h3>
+            <div class="css-example wrap">
+                <div class="flex wrap">
+                    <div class="square64px flex-item red flex-basis-350px">Red</div>
+                    <div class="square64px flex-item green flex-basis-350px">Green</div>
+                    <div class="square64px flex-item blue flex-basis-350px">Blue</div>
+                </div>
+            </div>
+            <p>Flex items will move to another row if the container isn't wide enough to fit them.</p>
+            <br>
+            <h3><span class="name">flex-wrap:</span> <span class="value">wrap-reverse</span></h3>
+            <div class="css-example">
+                <div class="flex wrap-reverse">
+                    <div class="square64px flex-item red flex-basis-350px">Red</div>
+                    <div class="square64px flex-item green flex-basis-350px">Green</div>
+                    <div class="square64px flex-item blue flex-basis-350px">Blue</div>
+                </div>
+            </div>
+            <p>Flex items will move to another row if the container isn't wide enough to fit them, but the direction and
+                the order of which the items are placed will
+                be inversed.</p>
+            <p><em>Since the direction is reversed, flex items will move to the previous row.</em></p>
+            <h3><span class="name">flex-wrap:</span> <span class="value">nowrap</span></h3>
+            <div class="css-example">
+                <div class="flex nowrap">
+                    <div class="square64px flex-item red flex-basis-350px">Red</div>
+                    <div class="square64px flex-item green flex-basis-350px">Green</div>
+                    <div class="square64px flex-item blue flex-basis-350px">Blue</div>
+                </div>
+            </div>
+            <p>Flex items won't be wrapped but will shrink if the container isn't wide enough to fit them.</p>
+        </section>
+        <br>
+    </main>
+</body>
+
+</html>
