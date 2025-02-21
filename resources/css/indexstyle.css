@@ -1,0 +1,25 @@
+#links {
+    display: flex;
+    min-height: 600px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.guide-link {
+    width: 250px;
+    height: 250px;
+    border: 2px solid var(--color-gray12-1);
+}
+
+.guide-link:hover {
+    box-shadow: 5px 5px black;
+    position: relative;
+    top: -5px;
+    left: -5px;
+}
+
+.guide-link:active {
+    box-shadow: 0 0;
+    position: static;
+}
