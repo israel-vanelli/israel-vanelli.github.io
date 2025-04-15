@@ -6,20 +6,33 @@
     justify-content: space-around;
 }
 
-.guide-link {
+#links a {
+    display: flex;
     width: 250px;
     height: 250px;
     border: 2px solid var(--color-gray12-1);
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
 }
 
-.guide-link:hover {
+.guide-option {
+    height: 3rem;
+    width: 80%;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 0;
+    background-color: var(--color-green);
+}
+
+#links a:hover {
     box-shadow: 5px 5px black;
     position: relative;
     top: -5px;
     left: -5px;
 }
 
-.guide-link:active {
+#links a:active {
     box-shadow: 0 0;
     position: static;
 }
